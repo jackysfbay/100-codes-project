@@ -5,4 +5,4 @@
  * @author Jacky
  *
  */
-package com.java.sort.bubble;
+package com.java.sorting;
