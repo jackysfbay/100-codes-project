@@ -63,7 +63,7 @@ public class JDBC_Test01 {
 	}
 
 	public static void main(String[] args) throws Exception {
-		// query("select * from info");
+		 query("select * from info");
 		// insert();
 		// update();
 //		delete();

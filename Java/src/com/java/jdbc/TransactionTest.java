@@ -1,7 +1,12 @@
 package com.java.jdbc;
 
 import java.sql.*;
-
+/**
+ * To use Transaction features for managing two conflict updates, 
+ * once fail to update on row, the transaction will rollback. 
+ * @author Jacky
+ *
+ */
 public class TransactionTest {
 
 	public static Connection getConnection() throws Exception {
