@@ -21,15 +21,8 @@ array -> the array being traversed
 
 window.onload= function () {
 
-    //[1, 2 ,3, 4].forEach(alert);
+    function soluition(arr){
 
-    var sum =0 ;
 
-    [1,2,3,4].forEach(function(value, index, array){
-
-        if(array[index] == value){
-            sum +=value;
-        }
-    })
-    alert(sum) //10
+    }
 }
