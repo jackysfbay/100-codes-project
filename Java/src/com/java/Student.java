@@ -5,6 +5,13 @@ public class Student {
 	private String name;
 	private String sex;
 	private String age;
+	
+	Student(String Name, String Sex, String Age) {
+        this.id = null; //default
+        this.name = Name;
+        this.sex = Sex;
+        this.age = Age;
+    }
 	public String getId() {
 		return id;
 	}
