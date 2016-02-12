@@ -1,0 +1,17 @@
+These objects are created by JSP Engine during translation phase (while translating JSP to Servlet). 
+They are being created inside service method so we can directly use them within Scriptlet without 
+initializing and declaring them. There are total 9 implicit objects available in JSP.
+
+
+
+Implicit Objects and their corresponding classes:
+
+out	 - javax.servlet.jsp.JspWriter
+request -	javax.servlet.http.HttpServletRequest
+response -	javax.servlet.http.HttpServletResponse
+session	- javax.servlet.http.HttpSession
+application - 	javax.servlet.ServletContext
+exception - javax.servlet.jsp.JspException
+page - java.lang.Object
+pageContext	- javax.servlet.jsp.PageContext
+config	- javax.servlet.ServletConfig
