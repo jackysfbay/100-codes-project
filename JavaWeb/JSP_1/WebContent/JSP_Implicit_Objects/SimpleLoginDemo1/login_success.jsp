@@ -8,13 +8,15 @@
 </head>
 <body>
 	<%
-		String username = request.getParameter("username");	
-		
-		out.println("<h1>Welcome "+ username +" !</h1>");
-		out.println("<hr>");
-		
-		out.println(session.getId()+"<br>");
+	String username="";
+		if(request.getParameter("username") != null){
+			 username = request.getParameter("username");	
+		}
+
 	%>
+	<h1>Welcome <%=username %> !</h1>
+	<hr>
+	<%=session.getId() %><br>
 <a href ="exit.jsp">Exit</a>
 
 

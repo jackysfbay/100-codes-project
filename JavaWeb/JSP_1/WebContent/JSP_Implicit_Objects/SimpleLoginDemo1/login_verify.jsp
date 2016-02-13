@@ -5,7 +5,7 @@
 	String username = request.getParameter("username");
 	String password = request.getParameter("password");
 	boolean isTrue = false;
-	if (username.contains("admin") && password.contains("admin")) {
+	if (username.equals("admin") && password.equals("admin")) {
 		isTrue = true;
 	}
 
