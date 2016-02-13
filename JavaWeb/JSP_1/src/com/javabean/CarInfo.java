@@ -3,7 +3,7 @@ package com.javabean;
 public class CarInfo {
 	private String brand;
 	private int year;
-	private String transmission;
+	private String horsepower;
 	private String model;
 
 	public CarInfo() {
@@ -25,12 +25,12 @@ public class CarInfo {
 		this.year = year;
 	}
 
-	public String getTransmission() {
-		return transmission;
+	public String getHorsepower() {
+		return horsepower;
 	}
 
-	public void setTransmission(String transmission) {
-		this.transmission = transmission;
+	public void setHorsepower(String horsepower) {
+		this.horsepower = horsepower;
 	}
 
 	public String getModel() {
