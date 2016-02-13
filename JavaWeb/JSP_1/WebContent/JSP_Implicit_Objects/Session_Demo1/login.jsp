@@ -4,12 +4,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Request Object</title>
+<title>Login Page</title>
 </head>
 <body>
-	<h1>User Register</h1>
-	<hr>							<!-- //RequestObject.jsp --><!--ResponseObject.jsp  -->
-	<form name="regForm" action="ResponseObject.jsp" method="post">
+	<h1>User Login</h1>
+	<hr>
+
+	<form action="loginFunction.jsp" method="post" name="regForm">
 		<table>
 			<tr>
 				<td>User Name:</td>
@@ -20,17 +21,16 @@
 				<td><input type="password" name="password" /></td>
 			</tr>
 			<tr>
-				<td>Hobbies:</td>
-				<td>
-					<input type="checkbox" name="hobbies" value="reading" />Reading
-					<input type="checkbox" name="hobbies" value="cooking" />Cooking 
-					<input type="checkbox" name="hobbies" value="sleeping" />Sleeping
-				</td>
-			<tr>
-				<td colspan="2"><input type="submit" name="submit"
-					value="Submit" /></td>
+				<td colspan="2"><input type="submit" name="submit" /></td>
 			</tr>
 		</table>
 	</form>
+	<br>
+	<%
+		if (session.getAttribute("cannotloogin") != null) {
+			out.println(session.getAttribute("cannotloogin"));
+			session.removeAttribute("cannotloogin");
+		}
+	%>
 </body>
 </html>

@@ -34,13 +34,15 @@
 		} else {
 			out.print("");
 		}
-	%>
+	%><br>
 	 Get Method <%=request.getMethod() %><br>
 	 Get Protocol <%=request.getProtocol() %><br>
 	 Get RequestURL <%=request.getRequestURL() %><br>
 	 Get RemoteAddr <%=request.getRemoteAddr() %><br>
 	 Get ServerName <%=request.getServerName() %><br>
 	 Get RemoteHost <%=request.getRemoteHost() %><br>
+	 Get HeaderNames <%=request.getHeaderNames() %><br>
+	 Get Header <%=request.getHeader("meta") %><br>
 	 Get Cookies <%
 	    if(request.getCookies() !=null){
 	    	Cookie [] co = request.getCookies();

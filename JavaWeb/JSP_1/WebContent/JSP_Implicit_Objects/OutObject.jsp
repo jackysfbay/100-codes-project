@@ -12,7 +12,11 @@
 	<%
 			out.flush();
 		 	out.println("Out: This is used for writing content to the client (browser).<br>");
-			out.println("It has several methods which can be used for properly<br>");
+			out.println("It has several methods which can be used for properly");
+			out.newLine();
+			out.newLine();
+			out.newLine();
+			out.newLine();
 			out.println("formatting output message to the browser and for dealing with the buffer.<br>");
 			out.println("<br>"); 
 			out.flush();
