@@ -16,13 +16,13 @@
 		<div class="input-group">
 			<span class="input-group-addon" id="basic-addon1">Input 1st
 				date</span> <input type="text" name="date1" class="form-control"
-				placeholder="YYYY/MM/DD (Bigger)" aria-describedby="basic-addon1"> <br>
+				placeholder="YYYY-MM-DD (Bigger)" aria-describedby="basic-addon1"> <br>
 		</div>
 		<br>
 		<div class="input-group" width="100">
 			<span class="input-group-addon" id="basic-addon2">Input 2st
 				date</span> <input type="text" name="date2" class="form-control"
-				placeholder="YYYY/MM/DD (Smaller)" aria-describedby="basic-addon1"> <br>
+				placeholder="YYYY-MM-DD (Smaller)" aria-describedby="basic-addon1"> <br>
 		</div>
 		<br>
 		<p>
@@ -30,6 +30,7 @@
 		</p>
 	</form>
 
-
 </body>
+<script>
+</script>
 </html>

@@ -11,7 +11,7 @@ public class CalDate {
 	public String result() throws ParseException {
 		String newStrDay = "";
 		long t2 = 0;
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd");
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 
 		if (getDate1() != null && getDate2() != null) {
 			Date d1 = sdf.parse(date1);
