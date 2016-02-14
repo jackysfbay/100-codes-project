@@ -1,0 +1,11 @@
+using the cookie to record the products history that people visited \.
+
+Use Model1 (JSP + JavaBean){
+
+
+ 1. create DBHelper uitl
+ 2. create entites class 
+ 3. create business logic 
+ 4. create persentation layer
+
+}
