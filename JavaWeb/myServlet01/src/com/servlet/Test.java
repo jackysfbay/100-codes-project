@@ -15,11 +15,12 @@ public class Test extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
+     * @throws ServletException 
      * @see HttpServlet#HttpServlet()
      */
-    public Test() {
-        super();
-        // TODO Auto-generated constructor stub
+    public Test() throws ServletException {
+       
+    
     }
 
 	/**
