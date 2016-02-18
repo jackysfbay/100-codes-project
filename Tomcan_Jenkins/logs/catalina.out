@@ -1,0 +1,158 @@
+29-Dec-2015 01:50:06.796 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.30
+29-Dec-2015 01:50:06.798 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 1 2015 22:30:46 UTC
+29-Dec-2015 01:50:06.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.30.0
+29-Dec-2015 01:50:06.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+29-Dec-2015 01:50:06.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.11.2
+29-Dec-2015 01:50:06.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+29-Dec-2015 01:50:06.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre
+29-Dec-2015 01:50:06.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_65-b17
+29-Dec-2015 01:50:06.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+29-Dec-2015 01:50:06.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/Jacky/Tomcat/apache-tomcat-8.0.30
+29-Dec-2015 01:50:06.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/Jacky/Tomcat/apache-tomcat-8.0.30
+29-Dec-2015 01:50:06.800 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/Jacky/tomcat/apache-tomcat-8.0.30/conf/logging.properties
+29-Dec-2015 01:50:06.800 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+29-Dec-2015 01:50:06.800 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/Users/Jacky/tomcat/apache-tomcat-8.0.30/endorsed
+29-Dec-2015 01:50:06.800 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/Jacky/tomcat/apache-tomcat-8.0.30
+29-Dec-2015 01:50:06.800 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/Jacky/tomcat/apache-tomcat-8.0.30
+29-Dec-2015 01:50:06.800 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/Jacky/tomcat/apache-tomcat-8.0.30/temp
+29-Dec-2015 01:50:06.800 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/Jacky/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+29-Dec-2015 01:50:06.929 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+29-Dec-2015 01:50:06.954 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+29-Dec-2015 01:50:06.956 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+29-Dec-2015 01:50:06.958 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+29-Dec-2015 01:50:06.958 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 488 ms
+29-Dec-2015 01:50:06.977 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+29-Dec-2015 01:50:06.977 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.30
+29-Dec-2015 01:50:06.985 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Jacky/Tomcat/apache-tomcat-8.0.30/webapps/docs
+29-Dec-2015 01:50:07.202 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Jacky/Tomcat/apache-tomcat-8.0.30/webapps/docs has finished in 216 ms
+29-Dec-2015 01:50:07.203 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Jacky/Tomcat/apache-tomcat-8.0.30/webapps/examples
+29-Dec-2015 01:50:07.456 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Jacky/Tomcat/apache-tomcat-8.0.30/webapps/examples has finished in 253 ms
+29-Dec-2015 01:50:07.457 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Jacky/Tomcat/apache-tomcat-8.0.30/webapps/host-manager
+29-Dec-2015 01:50:07.476 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Jacky/Tomcat/apache-tomcat-8.0.30/webapps/host-manager has finished in 19 ms
+29-Dec-2015 01:50:07.476 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Jacky/Tomcat/apache-tomcat-8.0.30/webapps/manager
+29-Dec-2015 01:50:07.495 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Jacky/Tomcat/apache-tomcat-8.0.30/webapps/manager has finished in 19 ms
+29-Dec-2015 01:50:07.495 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Jacky/Tomcat/apache-tomcat-8.0.30/webapps/ROOT
+29-Dec-2015 01:50:07.506 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Jacky/Tomcat/apache-tomcat-8.0.30/webapps/ROOT has finished in 11 ms
+29-Dec-2015 01:50:07.508 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+29-Dec-2015 01:50:07.513 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+29-Dec-2015 01:50:07.514 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 555 ms
+29-Dec-2015 01:51:05.059 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+29-Dec-2015 01:51:05.060 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+29-Dec-2015 01:51:05.113 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+29-Dec-2015 01:51:05.165 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+29-Dec-2015 01:51:05.189 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+29-Dec-2015 01:51:05.193 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+29-Dec-2015 01:51:05.193 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+29-Dec-2015 01:51:05.194 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+10-Jan-2016 21:40:55.903 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.30
+10-Jan-2016 21:40:55.905 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 1 2015 22:30:46 UTC
+10-Jan-2016 21:40:55.905 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.30.0
+10-Jan-2016 21:40:55.905 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+10-Jan-2016 21:40:55.905 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.11.2
+10-Jan-2016 21:40:55.905 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+10-Jan-2016 21:40:55.905 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre
+10-Jan-2016 21:40:55.905 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_65-b17
+10-Jan-2016 21:40:55.906 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+10-Jan-2016 21:40:55.906 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/Jacky/Tomcat/apache-tomcat-8.0.30
+10-Jan-2016 21:40:55.906 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/Jacky/Tomcat/apache-tomcat-8.0.30
+10-Jan-2016 21:40:55.906 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/Jacky/tomcat/apache-tomcat-8.0.30/conf/logging.properties
+10-Jan-2016 21:40:55.906 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+10-Jan-2016 21:40:55.906 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/Users/Jacky/tomcat/apache-tomcat-8.0.30/endorsed
+10-Jan-2016 21:40:55.906 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/Jacky/tomcat/apache-tomcat-8.0.30
+10-Jan-2016 21:40:55.907 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/Jacky/tomcat/apache-tomcat-8.0.30
+10-Jan-2016 21:40:55.907 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/Jacky/tomcat/apache-tomcat-8.0.30/temp
+10-Jan-2016 21:40:55.907 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/Jacky/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+10-Jan-2016 21:40:56.112 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+10-Jan-2016 21:40:56.149 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+10-Jan-2016 21:40:56.152 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+10-Jan-2016 21:40:56.153 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+10-Jan-2016 21:40:56.154 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 719 ms
+10-Jan-2016 21:40:56.183 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+10-Jan-2016 21:40:56.183 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.30
+10-Jan-2016 21:40:56.194 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Jacky/Tomcat/apache-tomcat-8.0.30/webapps/docs
+10-Jan-2016 21:40:56.474 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Jacky/Tomcat/apache-tomcat-8.0.30/webapps/docs has finished in 280 ms
+10-Jan-2016 21:40:56.475 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Jacky/Tomcat/apache-tomcat-8.0.30/webapps/examples
+10-Jan-2016 21:40:56.737 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Jacky/Tomcat/apache-tomcat-8.0.30/webapps/examples has finished in 262 ms
+10-Jan-2016 21:40:56.737 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Jacky/Tomcat/apache-tomcat-8.0.30/webapps/host-manager
+10-Jan-2016 21:40:56.760 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Jacky/Tomcat/apache-tomcat-8.0.30/webapps/host-manager has finished in 23 ms
+10-Jan-2016 21:40:56.760 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Jacky/Tomcat/apache-tomcat-8.0.30/webapps/manager
+10-Jan-2016 21:40:56.782 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Jacky/Tomcat/apache-tomcat-8.0.30/webapps/manager has finished in 22 ms
+10-Jan-2016 21:40:56.782 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Jacky/Tomcat/apache-tomcat-8.0.30/webapps/ROOT
+10-Jan-2016 21:40:56.795 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Jacky/Tomcat/apache-tomcat-8.0.30/webapps/ROOT has finished in 13 ms
+10-Jan-2016 21:40:56.798 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+10-Jan-2016 21:40:56.803 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+10-Jan-2016 21:40:56.804 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 650 ms
+10-Jan-2016 21:41:25.255 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+10-Jan-2016 21:41:25.258 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+10-Jan-2016 21:41:25.313 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+10-Jan-2016 21:41:25.367 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+10-Jan-2016 21:41:25.405 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+10-Jan-2016 21:41:25.408 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+10-Jan-2016 21:41:25.409 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+10-Jan-2016 21:41:25.410 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+18-Feb-2016 13:18:47.544 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.30
+18-Feb-2016 13:18:47.546 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 1 2015 22:30:46 UTC
+18-Feb-2016 13:18:47.546 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.30.0
+18-Feb-2016 13:18:47.546 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+18-Feb-2016 13:18:47.546 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.11.3
+18-Feb-2016 13:18:47.546 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+18-Feb-2016 13:18:47.547 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre
+18-Feb-2016 13:18:47.547 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_65-b17
+18-Feb-2016 13:18:47.547 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+18-Feb-2016 13:18:47.547 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/Jacky/Tomcat/apache-tomcat-8.0.30
+18-Feb-2016 13:18:47.547 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/Jacky/Tomcat/apache-tomcat-8.0.30
+18-Feb-2016 13:18:47.547 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/Jacky/Tomcat/apache-tomcat-8.0.30/conf/logging.properties
+18-Feb-2016 13:18:47.547 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+18-Feb-2016 13:18:47.548 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/Users/Jacky/Tomcat/apache-tomcat-8.0.30/endorsed
+18-Feb-2016 13:18:47.548 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/Jacky/Tomcat/apache-tomcat-8.0.30
+18-Feb-2016 13:18:47.548 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/Jacky/Tomcat/apache-tomcat-8.0.30
+18-Feb-2016 13:18:47.548 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/Jacky/Tomcat/apache-tomcat-8.0.30/temp
+18-Feb-2016 13:18:47.548 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/Jacky/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+18-Feb-2016 13:18:47.719 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+18-Feb-2016 13:18:47.753 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+18-Feb-2016 13:18:47.756 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+18-Feb-2016 13:18:47.758 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+18-Feb-2016 13:18:47.758 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 656 ms
+18-Feb-2016 13:18:47.788 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+18-Feb-2016 13:18:47.788 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.30
+18-Feb-2016 13:18:47.822 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive /Users/Jacky/Tomcat/apache-tomcat-8.0.30/webapps/jenkins.war
+18-Feb-2016 13:18:52.270 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Jenkins home directory: /Users/Jacky/.jenkins found at: $user.home/.jenkins
+18-Feb-2016 13:18:54.992 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive /Users/Jacky/Tomcat/apache-tomcat-8.0.30/webapps/jenkins.war has finished in 7,170 ms
+18-Feb-2016 13:18:54.994 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Jacky/Tomcat/apache-tomcat-8.0.30/webapps/docs
+18-Feb-2016 13:18:55.017 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Jacky/Tomcat/apache-tomcat-8.0.30/webapps/docs has finished in 24 ms
+18-Feb-2016 13:18:55.018 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Jacky/Tomcat/apache-tomcat-8.0.30/webapps/examples
+18-Feb-2016 13:18:55.199 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Jacky/Tomcat/apache-tomcat-8.0.30/webapps/examples has finished in 182 ms
+18-Feb-2016 13:18:55.199 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Jacky/Tomcat/apache-tomcat-8.0.30/webapps/host-manager
+18-Feb-2016 13:18:55.352 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Jacky/Tomcat/apache-tomcat-8.0.30/webapps/host-manager has finished in 153 ms
+18-Feb-2016 13:18:55.352 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Jacky/Tomcat/apache-tomcat-8.0.30/webapps/manager
+18-Feb-2016 13:18:55.405 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Jacky/Tomcat/apache-tomcat-8.0.30/webapps/manager has finished in 53 ms
+18-Feb-2016 13:18:55.405 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Jacky/Tomcat/apache-tomcat-8.0.30/webapps/ROOT
+18-Feb-2016 13:18:55.422 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Jacky/Tomcat/apache-tomcat-8.0.30/webapps/ROOT has finished in 16 ms
+18-Feb-2016 13:18:55.427 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+18-Feb-2016 13:18:55.434 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+18-Feb-2016 13:18:55.434 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 7676 ms
+18-Feb-2016 13:18:55.441 INFO [pool-6-thread-2] jenkins.InitReactorRunner$1.onAttained Started initialization
+18-Feb-2016 13:19:06.847 INFO [pool-6-thread-8] jenkins.InitReactorRunner$1.onAttained Listed all plugins
+18-Feb-2016 13:19:07.392 INFO [pool-6-thread-16] jenkins.InitReactorRunner$1.onAttained Prepared all plugins
+18-Feb-2016 13:19:07.433 INFO [pool-6-thread-9] jenkins.InitReactorRunner$1.onAttained Started all plugins
+18-Feb-2016 13:19:07.460 INFO [pool-6-thread-5] jenkins.InitReactorRunner$1.onAttained Augmented all extensions
+18-Feb-2016 13:19:09.219 INFO [pool-6-thread-1] jenkins.InitReactorRunner$1.onAttained Loaded all jobs
+18-Feb-2016 13:19:11.077 INFO [Download metadata thread] hudson.model.AsyncPeriodicWork$1.run Started Download metadata
+18-Feb-2016 13:19:11.425 INFO [SSHD.init] org.jenkinsci.main.modules.sshd.SSHD.start Started SSHD at port 58104
+18-Feb-2016 13:19:11.425 INFO [pool-6-thread-13] jenkins.InitReactorRunner$1.onAttained Completed initialization
+18-Feb-2016 13:19:11.433 INFO [Jenkins UDP 33848 monitoring thread] hudson.UDPBroadcastThread.run Cannot listen to UDP port 33,848, skipping: java.net.SocketException: Can't assign requested address
+18-Feb-2016 13:19:11.446 INFO [pool-14-thread-2] jenkins.InitReactorRunner$1.onAttained Started initialization
+18-Feb-2016 13:19:11.446 INFO [pool-14-thread-4] jenkins.InitReactorRunner$1.onAttained Listed all plugins
+18-Feb-2016 13:19:11.447 INFO [pool-14-thread-8] jenkins.InitReactorRunner$1.onAttained Prepared all plugins
+18-Feb-2016 13:19:11.448 INFO [pool-14-thread-10] jenkins.InitReactorRunner$1.onAttained Started all plugins
+18-Feb-2016 13:19:11.448 INFO [pool-14-thread-15] jenkins.InitReactorRunner$1.onAttained Augmented all extensions
+18-Feb-2016 13:19:11.449 INFO [pool-14-thread-16] jenkins.InitReactorRunner$1.onAttained Loaded all jobs
+18-Feb-2016 13:19:11.449 INFO [pool-14-thread-4] jenkins.InitReactorRunner$1.onAttained Completed initialization
+18-Feb-2016 13:19:11.450 INFO [Jenkins initialization thread] hudson.WebAppMain$3.run Jenkins is fully up and running
+18-Feb-2016 13:19:14.201 INFO [Download metadata thread] hudson.model.UpdateSite.updateData Obtained the latest update center data file for UpdateSource default
+18-Feb-2016 13:19:14.558 INFO [Download metadata thread] hudson.model.DownloadService$Downloadable.load Obtained the updated data file for hudson.tasks.Maven.MavenInstaller
+18-Feb-2016 13:19:14.887 INFO [Download metadata thread] hudson.model.DownloadService$Downloadable.load Obtained the updated data file for hudson.tasks.Ant.AntInstaller
+18-Feb-2016 13:19:16.209 INFO [Download metadata thread] hudson.model.DownloadService$Downloadable.load Obtained the updated data file for hudson.tools.JDKInstaller
+18-Feb-2016 13:19:16.212 INFO [Download metadata thread] hudson.model.AsyncPeriodicWork$1.run Finished Download metadata. 5,135 ms
+18-Feb-2016 13:29:04.692 INFO [Executor #0 for master : executing Test #1] hudson.model.Run.execute Test #1 main build action completed: SUCCESS

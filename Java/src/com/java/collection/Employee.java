@@ -1,6 +1,6 @@
 package com.java.collection;
 
-public class Employee {
+public class Employee implements Comparable{
 	private String name;
 	private int age;
 	private Mydate birthday;
@@ -31,5 +31,54 @@ public class Employee {
 	}
 	public void setBirthday(Mydate birthday) {
 		this.birthday = birthday;
+	}
+	
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + age;
+		result = prime * result + ((birthday == null) ? 0 : birthday.hashCode());
+		result = prime * result + ((name == null) ? 0 : name.hashCode());
+		return result;
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Employee other = (Employee) obj;
+		if (age != other.age)
+			return false;
+		if (birthday == null) {
+			if (other.birthday != null)
+				return false;
+		} else if (!birthday.equals(other.birthday))
+			return false;
+		if (name == null) {
+			if (other.name != null)
+				return false;
+		} else if (!name.equals(other.name))
+			return false;
+		return true;
+	}
+	@Override
+	public int compareTo(Object o) {
+		
+		if(o instanceof Employee){
+			
+			int i = this.getName().compareTo(((Employee) o).getName());
+			if(i == 0){
+				Integer a = this.getAge();
+				Integer aa = ((Employee) o).getAge();
+				return a.compareTo(aa);
+			}else {
+				return i;
+			}
+		}
+		return 0;
 	}
 }
