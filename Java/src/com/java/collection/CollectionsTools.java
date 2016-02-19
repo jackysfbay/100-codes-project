@@ -30,6 +30,8 @@ public class CollectionsTools {
 		List list2 = Arrays.asList(new Object[list.size()]);
 		Collections.copy(list2, list);
 		List list3 = Collections.synchronizedList(list); // use for Thread
+		
+		
 	}
 	@Test
 	public void test2() {

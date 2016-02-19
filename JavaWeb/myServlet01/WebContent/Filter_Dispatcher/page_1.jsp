@@ -8,5 +8,7 @@
 </head>
 <body>
 
+<a href="page_2.jsp">Forward</a><br>
+<a href="test.jsp">Request</a>
 </body>
 </html>

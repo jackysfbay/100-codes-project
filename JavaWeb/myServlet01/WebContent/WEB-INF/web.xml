@@ -1,21 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <context-param>
+  	<param-name>encoding</param-name>
+  	<param-value>UTF-8</param-value>
+  </context-param>
   <display-name>myServlet01</display-name>
-  <!-- <servlet>
-    <servlet-name>demo2</servlet-name>
-    <servlet-class>com.servlet.Refresh</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>demo2</servlet-name>
-    <url-pattern>/ServletAutoRefresh/Refresh</url-pattern>
-  </servlet-mapping> -->
+  <context-param>
+    <param-name>password</param-name>
+    <param-value>123456</param-value>
+  </context-param>
+  <filter>
+    <filter-name>usernameFilter</filter-name>
+    <filter-class>com.filter.UserNameFilter</filter-class>
+    <init-param>
+      <param-name>username</param-name>
+      <param-value>admin</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>usernameFilter</filter-name>
+    <url-pattern>/LoginFilter/hello.jsp</url-pattern>
+  </filter-mapping>
+  <filter>
+    <filter-name>passwordFilter</filter-name>
+    <filter-class>com.filter.PasswordFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>passwordFilter</filter-name>
+    <url-pattern>/LoginFilter/hello.jsp</url-pattern>
+  </filter-mapping>
+  <filter>
+    <filter-name>Filter_Dispatcher</filter-name>
+    <filter-class>com.filter.Filter_Dispatcher</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>Filter_Dispatcher</filter-name>
+    <url-pattern>/Filter_Dispatcher/test.jsp</url-pattern>
+    <dispatcher>FORWARD</dispatcher>
+    <dispatcher>REQUEST</dispatcher>
+  </filter-mapping>
   
-  <servlet>
-  	<servlet-name>reg</servlet-name>
-  	<servlet-class>com.servlet.RegServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-  	  	<servlet-name>reg</servlet-name>
-  		<url-pattern>/RregistrationForms/userInfo</url-pattern>
-  </servlet-mapping>
+  <filter>
+  	<filter-name>encoding</filter-name>
+  	<filter-class>com.filter.UTF8Filter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>encoding</filter-name>
+  	<url-pattern>/UTF8EnCodingFilter/*</url-pattern>
+  </filter-mapping>
 </web-app>
