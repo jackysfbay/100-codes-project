@@ -39,7 +39,7 @@
 	<classpathentry kind="lib" path="libs/jna-4.1.0.jar"/>
 	<classpathentry kind="lib" path="libs/jna-platform-4.1.0.jar"/>
 	<classpathentry kind="lib" path="libs/jsp-api-2.0.jar"/>
-	<classpathentry kind="lib" path="libs/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="libs/junit-4.12.jar" sourcepath="/Users/Jacky/.m2/repository/junit/junit/4.12/junit-4.12-sources.jar"/>
 	<classpathentry kind="lib" path="libs/nekohtml-1.9.22.jar"/>
 	<classpathentry kind="lib" path="libs/netty-3.5.7.Final.jar"/>
 	<classpathentry kind="lib" path="libs/phantomjsdriver-1.2.1.jar"/>

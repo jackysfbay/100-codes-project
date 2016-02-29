@@ -6,13 +6,9 @@ import java.util.List;
 public class Test01 {
 	public static void main(String[] args) {
 		   
-		String url ="http://stage-cpanel.bimanywhere.com/Projects/dashboard?r=true&type=welcome_back";
+		String msg = "The issue Issue - AutoTest-Time-2016-02-28 21:03:01 have been created.";
 		
-		String[] list  = url.split("=");
-		
-		for (String string : list) {
-			System.out.println(string);
-		}
-		
+	    Boolean b = msg.contains("AutoTest-Time-2016-02-28 21:03:01 have been created");
+		System.out.println(b);
 	}
 }

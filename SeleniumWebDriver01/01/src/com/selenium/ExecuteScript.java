@@ -12,7 +12,9 @@ public class ExecuteScript {
 
 		
 		WebDriver driver = new FirefoxDriver();
-		((JavascriptExecutor)driver).executeScript("alert(\"hello,this is a alert!\")");
+		
+		driver.get("http://localhost:63342/JS_Test01/test.html");
+//		((JavascriptExecutor)driver).executeScript("alert(\"hello,this is a alert!\")");
 	}
 
 }

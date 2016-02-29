@@ -2,9 +2,12 @@ package com.selenium;
 
 import static org.junit.Assert.assertEquals;
 
+import java.util.List;
+
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -45,6 +48,19 @@ public class BIManywhere_Test02 {
 		driver.findElement(By.name("description")).sendKeys("This is auto Test Prject 01");
 		Select licenses = new Select(driver.findElement(By.id("pay-id")));
 		licenses.selectByIndex(1);
-
+		Thread.sleep(2000);
+		driver.findElement(By.cssSelector("button.btn.btn-primary")).click();
+		WebDriverWait wait = new WebDriverWait(driver, 5);
+			String createdURL = wait.until(new ExpectedCondition<String>(){
+				@Override
+				public String apply(WebDriver driver) {
+					return driver.getCurrentUrl();
+				}
+			});
+			
+			String[] list = createdURL.split("=");
+			String keyStr = list[2];
+//			System.out.println(keyStr);
+			assertEquals("project_create", keyStr);
 	}
 }
