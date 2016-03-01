@@ -38,7 +38,7 @@ public class IssuesFilter {
 
 	@After
 	public void exit() {
-		
+
 		driver.quit();
 	}
 

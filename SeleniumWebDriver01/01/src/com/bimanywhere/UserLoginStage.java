@@ -2,6 +2,7 @@ package com.bimanywhere;
 
 import static org.junit.Assert.*;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -39,7 +40,13 @@ public class UserLoginStage {
 		String keywords = (getResponeURL.split("="))[1];
 		
 		assertEquals("true&type", keywords);
+		Thread.sleep(2000);
 
+	}
+	
+	@After
+	public void ex(){
+		driver.quit();
 	}
 
 }

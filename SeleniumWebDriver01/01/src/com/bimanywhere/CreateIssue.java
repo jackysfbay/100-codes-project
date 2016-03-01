@@ -49,7 +49,8 @@ public class CreateIssue {
 		String msg = alert.getText();
 		 Boolean isCreated = msg.contains(issueName);
 		 assertEquals(true, isCreated);
-		 
+			Thread.sleep(2000);
+
 	}
 	@After
 	public void exit(){

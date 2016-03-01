@@ -2,10 +2,12 @@ package com.bimanywhere;
 
 import static org.junit.Assert.*;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -40,8 +42,12 @@ public class CreateNewProject {
 			String[] list = createdURL.split("=");
 			String keyStr = list[2];
 			assertEquals("project_create", keyStr);
-			
+			Thread.sleep(2000);
 
-
+	}
+	@After
+	public void ex(){
+		
+		driver.quit();
 	}
 }
