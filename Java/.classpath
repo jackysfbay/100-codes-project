@@ -3,6 +3,8 @@
 	<classpathentry excluding="com/java/jdbc/" kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="mysql-connector-java-5.0.8.jar"/>
+	<classpathentry kind="lib" path="lib/gson-2.2.4-sources.jar"/>
+	<classpathentry kind="lib" path="lib/gson-2.2.4.jar" sourcepath="/Users/Jacky/.m2/repository/com/google/code/gson/gson/2.2.4/gson-2.2.4-sources.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

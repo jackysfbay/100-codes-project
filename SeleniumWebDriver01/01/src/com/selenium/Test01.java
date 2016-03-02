@@ -27,21 +27,21 @@ public class Test01 {
 		list.add("FC 23 Issue");
 		list.add("FC 25 Issue");
 		list.add("FC 30 Issue");
-		
+
 		for (int i = 0; i < list.size(); i++) {
 			String[] tempList = (list.get(i)).split(" ");
-			String str = tempList[0]+tempList[1];
+			String str = tempList[0] + tempList[1];
 			list2.add(str);
 		}
 		System.out.println(list2);
+
+		String x = "FC29";
+
+		for (int i = 0; i <= list2.size()-1; i++) {
+			if ((list2.get(i)).equals(x)) {
+				System.out.println(list2.get(i)+"index: "+i);
+			}
+		}
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 }
