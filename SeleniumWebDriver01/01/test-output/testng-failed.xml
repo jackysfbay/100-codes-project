@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.bimanywhere.RegisterNewUser">
+      <class name="com.selenium.NewTest">
         <methods>
-          <include name="userReg"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="f"/>
         </methods>
-      </class> <!-- com.bimanywhere.RegisterNewUser -->
+      </class> <!-- com.selenium.NewTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

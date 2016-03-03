@@ -5,7 +5,9 @@ import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
 @RunWith(Suite.class)
-@SuiteClasses({  RegisterUser.class,UserLoginStage.class, CreateNewProject.class, CreateIssue.class, IssuesFilter.class })
+@SuiteClasses({ AllTests.class, CreateIssue.class, CreateNewProject.class, IssueArchive.class, IssuesFilter.class,
+		RegisterUser.class, UserLoginStage.class })
+
 public class AllTests {
-		
+
 }
