@@ -47,7 +47,7 @@
 	<classpathentry kind="lib" path="libs/selenium-java-2.51.0-srcs.jar"/>
 	<classpathentry kind="lib" path="libs/selenium-java-2.51.0.jar" sourcepath="libs/selenium-java-2.51.0.jar"/>
 	<classpathentry kind="lib" path="libs/serializer-2.7.2.jar"/>
-	<classpathentry kind="lib" path="libs/testng-6.9.9.jar"/>
+	<classpathentry kind="lib" path="libs/testng-6.9.9.jar" sourcepath="/Users/Jacky/.m2/repository/org/testng/testng/6.9.9/testng-6.9.9-sources.jar"/>
 	<classpathentry kind="lib" path="libs/websocket-api-9.2.13.v20150730.jar"/>
 	<classpathentry kind="lib" path="libs/websocket-client-9.2.13.v20150730.jar"/>
 	<classpathentry kind="lib" path="libs/websocket-common-9.2.13.v20150730.jar"/>
