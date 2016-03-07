@@ -2,6 +2,7 @@ package com.java.jdbc1;
 
 import java.io.InputStream;
 import java.sql.Connection;
+import java.sql.DatabaseMetaData;
 import java.sql.Driver;
 import java.sql.DriverManager;
 import java.util.Properties;
@@ -60,6 +61,9 @@ public class GeneralJDBCConnection {
 		//DriverManager.registerDriver((Driver)Class.forName(driverClass).newInstance());
 		Class.forName("com.mysql.jdbc.Driver");
 		Connection connection = DriverManager.getConnection(jdbcURL, properties);
+		DatabaseMetaData data = connection.getMetaData();
+		data.getDatabaseMajorVersion();
+		
 		System.out.println(connection);
 		
 	}
