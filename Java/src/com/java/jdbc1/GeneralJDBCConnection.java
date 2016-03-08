@@ -11,7 +11,7 @@ import org.junit.Test;
 
 public class GeneralJDBCConnection {
 
-	public Connection getConnection() throws Exception {
+	public  Connection getConnection() throws Exception {
 		String driverClass = null;
 		String jdbcURL = null;
 		String user = null;
@@ -69,7 +69,8 @@ public class GeneralJDBCConnection {
 	}
 	@Test
 	public void testConn() throws Exception {
-		System.out.println(getConnection());
+		Connection connection = getConnection();
+		
 
 	}
 }

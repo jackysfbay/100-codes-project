@@ -94,7 +94,7 @@ public class HibernateTest2 {
 
 	@Test
 	public void testload() {
-		//lazyInitailzationException
+		// lazyInitailzationException
 		// load throw a excetion "objectNotFound" if the object OID is not found
 		News news1 = (News) session.load(News.class, 7);
 		System.out.println(news1);
@@ -110,11 +110,18 @@ public class HibernateTest2 {
 
 	@Test
 	public void testPersist() {
-		News news1 = new News();
-		news1.setAuthor("dd");
-		news1.setTitle("TT");
+		News news12 = new News();
+		news12.setAuthor("ddsssertsA");
+		news12.setTitle("TTSertSS");
 
-		session.persist(news1);
+		session.save(news12);
+	}
+	
+	@Test
+	public void test02(){
+		News news = (News) session.get(News.class, 2);
+		news.setAuthor("AAdqqA");
+		
 	}
 
 }
