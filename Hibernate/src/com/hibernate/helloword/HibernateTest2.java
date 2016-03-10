@@ -1,7 +1,14 @@
 package com.hibernate.helloword;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.sql.Blob;
+import java.sql.Timestamp;
 import java.util.Date;
 
+import org.hibernate.Hibernate;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -11,6 +18,9 @@ import org.hibernate.service.ServiceRegistryBuilder;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+
+import com.hibernate.component.Pay;
+import com.hibernate.component.Worker;
 
 @SuppressWarnings("deprecation")
 public class HibernateTest2 {
@@ -42,7 +52,7 @@ public class HibernateTest2 {
 	// db
 	public void testSessionFlush() {
 		News news1 = (News) session.get(News.class, 1);
-		news1.setAuthor("XML");
+		news1.setAuthor("XdML");
 	}
 
 	@Test
@@ -110,18 +120,53 @@ public class HibernateTest2 {
 
 	@Test
 	public void testPersist() {
-		News news12 = new News();
-		news12.setAuthor("ddsssertsA");
-		news12.setTitle("TTSertSS");
+		News news = new News();
+		news.setAuthor("ddsssertsA");
+		news.setTitle("TTSertSS");
 
-		session.save(news12);
+		session.save(news);
 	}
-	
+
 	@Test
-	public void test02(){
+	public void test02() {
 		News news = (News) session.get(News.class, 2);
 		news.setAuthor("AAdqqA");
-		
 	}
+	@Test
+	public void TestBlob() throws IOException {
+		News news12 = new News();
+		news12.setAuthor("AAAA");
+		news12.setTitle("AA-Title");
+		news12.setDate(new java.sql.Date(new Date().getTime()));;
+		
+		InputStream stream = new FileInputStream("transcripts.png");
+		Blob image = Hibernate.getLobCreator(session).createBlob(stream, stream.available());
+		news12.setImage(image);
 
+		session.save(news12);
+		
+		/**
+		 * News news = (News) session.get(News.class, 1);
+		Blob image = news.getImage();
+		
+		InputStream in = image.getBinaryStream();
+		System.out.println(in.available()); 
+		 * 
+		 */
+	}
+	@Test
+	public void test() {
+		Worker worker = new Worker();
+		Pay pay = new Pay();
+
+		pay.setMonthlyPay(1000);
+		pay.setYearPay(80000);
+		pay.setVocationWithPay(5);
+
+		worker.setName("ABCD");
+		worker.setPay(pay);
+
+		session.save(worker);
+
+	}
 }

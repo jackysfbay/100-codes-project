@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 9, 2016 6:31:17 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping package="com.hibernate.one2many">
+	<class name="Order" table="ORDERs">
+		<id name="orderId" type="java.lang.Integer">
+			<column name="ORDER_ID" />
+			<generator class="native" />
+		</id>
+		<property name="orderName" type="java.lang.String">
+			<column name="ORDER_NAME" />
+		</property>
+		<!-- 
+			name: FK name
+			class: PK name
+			column: FK id  linked PK id 
+		 -->
+		<many-to-one name="customer" class="Customer" column="CUSTOMER_ID"></many-to-one>
+	</class>
+</hibernate-mapping>

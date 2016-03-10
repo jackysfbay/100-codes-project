@@ -8,22 +8,31 @@
 		<property name="connection.username">root</property>
 		<property name="connection.password"></property>
 		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
-		<property name="connection.url">jdbc:mysql://127.0.0.1:3301/t2</property>
-		
-		<!-- Hibernate information dialect-->
-		<property name="dialect">org.hibernate.dialect.MySQLInnoDBDialect</property>
-		
+		<property name="connection.url">jdbc:mysql://127.0.0.1:3301/t3</property>
+
+		<!-- Hibernate information dialect ****Use MySQL5InnoDBDialect instead 
+			of MySQLInnoDBDialect. -->
+		<property name="dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+
 		<!-- is print sql -->
 		<property name="show_sql">true</property>
-		
+
 		<!-- is format sql -->
 		<property name="format_sql">true</property>
-		
+
 		<!-- auto create table -->
-		<property name="hbm2ddl.auto">update</property>
+		<property name="hbm2ddl.auto">create</property>
+
+
+		<!-- link to News.hbm.xml -->
+		<!-- <mapping resource = "com/hibernate/helloword/News.hbm.xml"/> <mapping 
+			resource="com/hibernate/component/Worker.hbm.xml" /> 
+		<mapping resource="com/hibernate/one2many/Customer.hbm.xml" />
+		<mapping resource="com/hibernate/one2many/Order.hbm.xml" />
 		
-		
-		<!--  link to News.hbm.xml -->
-		<mapping resource = "com/hibernate/helloword/News.hbm.xml"/>
+		<mapping resource="com/hibernate/inheritanceMapping/Person.hbm.xml" />
+		-->
+		<mapping resource="com/hibernate/unionSubclass/Person.hbm.xml" />
+
 	</session-factory>
 </hibernate-configuration>
