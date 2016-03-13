@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project default="execute">
+
+	<property name="build.dir" location="build">
+	</property>
+	<property name="build.classes" location="${build.dir}/classes">
+	</property>
+	<property name="build.src" location="${build.dir}/src">
+	</property>
+	<property name="build.dist" location="${build.dir}/dist">
+	</property>
+	<property name="execute.class" value="com.ant.HelloWorld">
+	</property>
+	<property name="jar.name" value="hello.jar">
+	</property>
+	<!--
+		1. if there are many properties need to set ,  then we can create a build.properties for storing the 
+		property name and value like in build.properties file, we cam set build.dir = build etc.
+		
+		2.in the build.xml, create a  	<property file="build.properties"></property> to match them
+		
+	-->
+
+	<!--1. create build folder -->
+	<fileset id="src.path" dir="src">
+		<include name="**/*.*" />
+		<exclude name="**/Test*" />
+	</fileset>
+
+	<target name="init">
+		<delete dir="${build.dir}">
+		</delete>
+		<mkdir dir="${build.dir}" />
+		<mkdir dir="${build.src}" />
+		<mkdir dir="${build.classes}" />
+		<mkdir dir="${build.dist}" />
+	</target>
+
+	<target name="copySrc" depends="init">
+		<copy todir="${build.src}">
+			<fileset refid="src.path">
+			</fileset>
+		</copy>
+	</target>
+	<!--2. compile java class -->
+
+	<target name="compile" depends="init">
+		<javac destdir="${build.classes}" srcdir="src">
+		</javac>
+
+	</target>
+
+	<!--3. pack jar -->
+	<target name="jar" depends="compile">
+		<jar destfile="${build.dist}/${jar.name}" basedir="${build.classes}">
+			<manifest>
+				<attribute name="Main-Class" value="${execute.class}" />
+				<attribute name="Build-By" value="Jacky.Cao" />
+			</manifest>
+		</jar>
+	</target>
+	<!--4. execute jar -->
+	<target name="execute" depends="jar, copySrc">
+		<echo>execute a class by classPath </echo>
+		<java classname="${execute.class}" classpath="${build.classes}">
+			<arg value="Jacky" />
+			<arg value="Ben" />
+		</java>
+		<echo>execute a class by jar </echo>
+		<java jar="${build.src}/${jar.name}" fork="true">
+			<arg value="Hon" />
+			<arg value="Lee" />
+		</java>
+	</target>
+
+</project>

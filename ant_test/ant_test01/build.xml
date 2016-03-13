@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project default="execute">
+	<target name="compile">
+		<javac destdir="." srcdir="."></javac>
+	</target>
+	<target name="execute" depends="compile">
+		<java classpath="." classname="HelloWorld"></java>
+		<java classpath="." classname="HelloWorld2"></java>
+
+	</target>
+
+</project>

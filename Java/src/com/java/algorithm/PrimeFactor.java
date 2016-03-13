@@ -3,7 +3,8 @@ package com.java.algorithm;
 public class PrimeFactor {
 
 	public static void main(String[] args) {
-		isFactor(30);
+		isFactor(24
+				);
 	}
 
 	public static void isFactor(int num) {
