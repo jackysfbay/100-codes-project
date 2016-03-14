@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project>
+	<property name="src.dir" location="src"></property>
+	<property name="test.src.dir" location="test"></property>
+	<property name="build.dir" location="build"></property>
+	<property name="build.classes" location="${build.dir}/classes"></property>
+	<property name="build.test.dir" location="${build.dir}/test"></property>
+	<property name="build.test.classes" location="${build.test.dir}/classes"></property>
+	<property name="build.test.report" location="${build.test.dir}/report"></property>
+	
+	
+	<target name="clean"> 
+		<delete dir="${build.dir}"></delete>
+	</target>
+	
+	<target name="init">
+		<mkdir dir="${build.dir}"/>
+		<mkdir dir="${build.classes}"/>
+		<mkdir dir="${build.test.dir}"/>
+		<mkdir dir="${build.test.classes}"/>
+		<mkdir dir="${build.test.report}"/>
+	</target>
+</project>
