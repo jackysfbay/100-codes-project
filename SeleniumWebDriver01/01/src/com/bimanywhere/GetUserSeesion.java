@@ -10,12 +10,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class GetUserSeesion {
 	private String index = "http://stage-cpanel.bimanywhere.com/";
-	WebDriver driver ;
-	
+	private WebDriver driver;
+
 	public WebDriver getSeesion() throws InterruptedException {
 		driver = new FirefoxDriver();
 		driver.get(index);
-		
+
 		Thread.sleep(1000);
 		driver.findElement(By.name("username")).sendKeys("tester@zimfly.com");
 		driver.findElement(By.name("password")).sendKeys("zimfly");
@@ -31,9 +31,10 @@ public class GetUserSeesion {
 		});
 		String keywords = (getResponeURL.split("="))[1];
 		assertEquals("true&type", keywords);
-//		System.out.println("done");
+		// System.out.println("done");
 		return driver;
 	}
+
 	public static void main(String[] args) throws InterruptedException {
 		GetUserSeesion session = new GetUserSeesion();
 		session.getSeesion();

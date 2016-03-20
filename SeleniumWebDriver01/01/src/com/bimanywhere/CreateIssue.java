@@ -20,7 +20,6 @@ public class CreateIssue {
 		GetUserSeesion session = new GetUserSeesion();
 		driver = session.getSeesion();
 		Thread.sleep(1000);
-
 		WebElement table = driver.findElement(By.className("table"));
 		List<WebElement> rows = table.findElements(By.xpath(".//tbody/tr"));
 		WebElement row = rows.get(0);
